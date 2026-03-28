@@ -12,8 +12,8 @@ export default function ParticlesBackground() {
           move: { speed: 0.6 },
           opacity: { value: 0.5 },
           color: { value: "#ffffff" },
-          links: { enable: true, opacity: 0.2 }
-        }
+          links: { enable: true, opacity: 0.2 },
+        },
       }}
       className="fixed top-0 left-0 w-full h-full -z-10"
     />

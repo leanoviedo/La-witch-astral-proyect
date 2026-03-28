@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from "./Navbar";
 import ParticlesBackground from "./ParticlesBackground";
 import ServicesSection from "./ServicesSection";
@@ -12,46 +14,64 @@ export default function Home() {
       </header>
 
       <main className="w-full">
-
         {/* ================= INICIO ================= */}
         <section
           id="inicio"
           className="
+            relative
             min-h-screen flex items-center justify-center text-white
-            bg-contain md:bg-cover
-            bg-[size:90%] md:bg-cover
-            bg-no-repeat bg-center
+            bg-cover bg-no-repeat
+            bg-[url('/imagen1-mobile.webp')]
+            bg-[center_top]
+            md:bg-center
+            md:bg-[url('/imagen1-2.webp')]
             md:bg-fixed
-            bg-[#050505]
             px-4 md:px-6 py-20
           "
-          style={{ backgroundImage: "url('/imagen1-2.webp')" }}
         >
-          <div className="bg-black/60 backdrop-blur-md p-6 md:p-10 rounded-2xl max-w-2xl shadow-2xl">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-              Quiénes Somos
-            </h1>
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black/50" />
 
-            <div className="space-y-4 text-sm md:text-lg text-gray-200 leading-relaxed">
-              <p>
-                La Witch Astral no es solo un servicio espiritual. Es un templo energético de transmutación, despertar y recuerdo del alma.
-              </p>
+          {/* CONTENIDO */}
+          <div className="relative z-10">
+            <div
+              className="
+              bg-black/60 backdrop-blur-md
+              p-6 md:p-10
+              rounded-2xl
+              max-w-2xl
+              shadow-2xl
+              mt-10 md:mt-0
+            "
+            >
+              <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                Quiénes Somos
+              </h1>
 
-              <p>
-                La energía se sostiene en símbolos ancestrales y arquetipos como el fuego, la serpiente dorada y la triple luna.
-              </p>
-
-              <div className="mt-6 pt-6 border-t border-white/20">
-                <p className="font-semibold text-white mb-3 italic text-center md:text-left">
-                  ✦ NUESTRO PROPÓSITO
+              <div className="space-y-4 text-sm md:text-lg text-gray-200 leading-relaxed">
+                <p>
+                  La Witch Astral no es solo un servicio espiritual. Es un
+                  templo energético de transmutación, despertar y recuerdo del
+                  alma.
                 </p>
 
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm md:text-base">
-                  <li>• Liberar bloqueos</li>
-                  <li>• Cortar ataduras</li>
-                  <li>• Activar la intuición</li>
-                  <li>• Reconectar con tu esencia</li>
-                </ul>
+                <p>
+                  La energía se sostiene en símbolos ancestrales y arquetipos
+                  como el fuego, la serpiente dorada y la triple luna.
+                </p>
+
+                <div className="mt-6 pt-6 border-t border-white/20">
+                  <p className="font-semibold text-white mb-3 italic text-center md:text-left">
+                    ✦ NUESTRO PROPÓSITO
+                  </p>
+
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm md:text-base">
+                    <li>• Liberar bloqueos</li>
+                    <li>• Cortar ataduras</li>
+                    <li>• Activar la intuición</li>
+                    <li>• Reconectar con tu esencia</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -61,19 +81,22 @@ export default function Home() {
         <section
           id="servicios"
           className="
+            relative
             min-h-screen flex items-center justify-center text-white
-            bg-contain md:bg-cover
-            bg-[size:90%] md:bg-cover
-            bg-no-repeat bg-center
+            bg-cover bg-no-repeat
+            bg-[url('/imagen2-mobile.webp')]
+            bg-center
+            md:bg-[url('/imagen2.webp')]
             md:bg-fixed
-            bg-[#050505]
             px-4 md:px-6 py-24
           "
-          style={{ backgroundImage: "url('/imagen2.webp')" }}
         >
-          <div className="max-w-6xl w-full text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              nuestros trabajos espirituales
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black/50" />
+
+          <div className="relative z-10 max-w-6xl w-full text-center">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              Nuestros trabajos espirituales
             </h2>
 
             <p className="font-semibold text-gray-200 mb-12 text-lg md:text-xl italic">
@@ -88,28 +111,33 @@ export default function Home() {
         <section
           id="contacto"
           className="
+            relative
             min-h-screen flex items-center justify-center text-white
-            bg-contain md:bg-cover
-            bg-[size:90%] md:bg-cover
-            bg-no-repeat bg-center
+            bg-cover bg-no-repeat
+            bg-[url('/imagen1-mobile.webp')]
+            bg-[center_top]
+            md:bg-center
+            md:bg-[url('/imagen1-2.webp')]
             md:bg-fixed
-            bg-[#050505]
             px-4 md:px-6 py-20
           "
-          style={{ backgroundImage: "url('/imagen1-2.webp')" }}
         >
-          <div className="bg-black/60 backdrop-blur-md p-8 md:p-12 rounded-2xl text-center max-w-2xl w-full shadow-2xl border border-white/10">
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black/50" />
 
+          <div className="relative z-10 bg-black/60 backdrop-blur-md p-8 md:p-12 rounded-2xl text-center max-w-2xl w-full shadow-2xl border border-white/10">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Redes Sociales
+              Comunicate con nosotras
             </h2>
 
             <p className="text-gray-300 mb-8">
-              Conéctate con <span className="text-white font-semibold">@la.witch.astral</span>
+              Escribinos por WhatsApp o conectate a través de{" "}
+              <span className="text-white font-semibold">
+                nuestras redes sociales
+              </span>
             </p>
 
             <div className="flex flex-col gap-4 md:flex-row md:justify-center">
-
               <a
                 href="https://www.tiktok.com/@la.witch.astral"
                 target="_blank"
@@ -133,29 +161,29 @@ export default function Home() {
               >
                 Instagram
               </a>
-
             </div>
           </div>
         </section>
-
       </main>
 
       {/* ================= WHATSAPP ================= */}
       <a
         href="https://wa.me/5492615555634"
         target="_blank"
+        rel="noopener noreferrer"
         className="
-          fixed bottom-6 right-6
-          bg-green-500 hover:bg-green-600
-          p-4 rounded-full shadow-2xl z-50
-          transition transform hover:scale-110
-        "
+    fixed bottom-6 right-6
+    bg-green-500 hover:bg-green-600
+    p-4 rounded-full shadow-2xl z-50
+    transition transform hover:scale-110
+  "
       >
         <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
           className="w-6 h-6 fill-white"
-          viewBox="0 0 24 24"
         >
-          <path d="M20.52 3.48A11.82 11.82 0 0012.05 0C5.5 0 .17 5.33.17 11.88c0 2.1.55 4.15 1.6 5.95L0 24l6.35-1.66a11.9 11.9 0 005.7 1.45h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.23-6.14-3.42-8.43zm-8.47 18.3h-.01a9.9 9.9 0 01-5.05-1.39l-.36-.21-3.76.99 1-3.66-.24-.37a9.9 9.9 0 01-1.52-5.27c0-5.46 4.44-9.9 9.9-9.9 2.65 0 5.14 1.03 7.01 2.9a9.87 9.87 0 012.9 7c0 5.46-4.44 9.9-9.89 9.9zm5.43-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.47-2.4-1.48-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.08-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.29.18-1.42-.08-.12-.27-.2-.57-.35z" />
+          <path d="M16.001 3C9.372 3 4 8.373 4 15.002c0 2.65.865 5.1 2.33 7.09L4 29l7.122-2.29a11.93 11.93 0 004.879 1.04h.001c6.629 0 12.001-5.372 12.001-12.001C28.003 8.373 22.63 3 16.001 3zm0 21.8h-.001a9.78 9.78 0 01-4.987-1.37l-.357-.212-4.227 1.36 1.38-4.116-.232-.375a9.77 9.77 0 01-1.5-5.234c0-5.405 4.396-9.8 9.8-9.8 2.617 0 5.077 1.02 6.928 2.872a9.735 9.735 0 012.872 6.928c0 5.405-4.396 9.8-9.8 9.8zm5.376-7.34c-.294-.147-1.737-.857-2.005-.955-.268-.098-.463-.147-.659.147-.196.294-.757.955-.928 1.151-.171.196-.343.22-.637.074-.294-.147-1.241-.457-2.364-1.457-.874-.778-1.463-1.738-1.634-2.032-.171-.294-.018-.452.129-.598.132-.131.294-.343.441-.514.147-.171.196-.294.294-.49.098-.196.049-.368-.025-.514-.074-.147-.659-1.588-.902-2.176-.237-.568-.478-.49-.659-.49-.171 0-.368-.025-.563-.025-.196 0-.514.074-.784.368-.27.294-1.029 1.005-1.029 2.452 0 1.447 1.054 2.844 1.201 3.04.147.196 2.076 3.168 5.032 4.44.703.304 1.252.486 1.68.622.705.224 1.347.192 1.855.116.566-.084 1.737-.71 1.983-1.397.245-.686.245-1.274.171-1.397-.074-.123-.27-.196-.564-.343z" />
         </svg>
       </a>
     </>

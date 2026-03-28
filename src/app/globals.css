@@ -60,10 +60,25 @@ html {
 .custom-scroll::-webkit-scrollbar-thumb {
   background: #9333ea;
   border-radius: 10px;
-}.no-scrollbar::-webkit-scrollbar {
+}
+.no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.4s ease;
 }
