@@ -168,7 +168,7 @@ export default function Home() {
 
       {/* ================= WHATSAPP ================= */}
       <a
-        href="https://wa.me/5492615555634"
+        href="https://wa.me/5492634871951?text=Hola%20Wicha%20Astral%20✨%20%20vengo%20de%20tu%20sitio%20web.%20Estoy%20interesado/a%20en%20una%20consulta%20espiritual.%20¿Podrías%20darme%20más%20información?"
         target="_blank"
         rel="noopener noreferrer"
         className="
