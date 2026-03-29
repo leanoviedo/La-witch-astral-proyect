@@ -139,7 +139,7 @@ export default function Home() {
 
             <div className="flex flex-col gap-4 md:flex-row md:justify-center">
               <a
-                href="https://www.tiktok.com/@la.witch.astral"
+                href="https://www.tiktok.com/@la_witch_astral3?_r=1&_t=ZS-954MnlLaYWz"
                 target="_blank"
                 className="bg-black px-6 py-3 rounded-xl border border-white/10 hover:scale-105 transition"
               >
